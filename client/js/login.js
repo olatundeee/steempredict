@@ -16,7 +16,18 @@ function login() {
     axios.post('http://localhost:3000/login', {
         loginParam
     }).then(response => {
-        console.log(response)
+        const loginData = response.data;
+
+        if (loginData.auth === true ) {
+            sessionStorage.setItem('authtoken', loginData.token);
+
+            // remove current user name and set a new value for current user name, store in local storage
+
+            sessionStorage.removeItem('currentUser');
+            sessionStorage.setItem('currentUser', loginParam.username);
+
+            window.location.replace("./dashboard.html");
+        }
     }).catch(err => {
          console.log(err);
     })

@@ -35,6 +35,7 @@ app.use('/users', usersRouter);
 // login route
 
 app.post('/login', loginRouter);
+app.get('/logout', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
