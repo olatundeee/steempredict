@@ -33,3 +33,54 @@
     cursor: pointer;
     margin-top: 2%;
 }
+
+.sports-area {
+    background: rgb(46, 46, 45);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-top: 0.5em solid #5385c1;
+}
+
+#all-sports-list {
+    background: rgb(46, 46, 45);
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    padding: 1%;
+    height: 100%;
+    width: 15%;
+    border: none !important;
+}
+
+.list-item {
+    background: rgb(46, 46, 45) !important;
+    list-style: none;
+    border: 1px solid white;
+    padding: 7%;
+    cursor: pointer;
+}
+
+.list-link {
+    background: rgb(46, 46, 45);
+}
+
+.one-event {
+    color: white;
+}
+
+.no-event {
+    color: white;
+}
+
+.league-name {
+    color: white;
+}
+
+#eventsView {
+    position: relative !important;
+    top: -85% !important;
+}
+

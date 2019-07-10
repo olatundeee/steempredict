@@ -5,16 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SteemPredict User Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./css/dashboard.css">
 </head>
-<body>
+<body onload="displayTomorrowEvents()">
     <section class="banner">
         <h1 class="username"></h1>
         <a class="logout-btn" onclick="logout()">logout</a>
     </section>
 
+    <section class="row sports-area">
+        <ul id="all-sports-list" class="col l2 m2 collection"></ul>
+        <div class="col l7 m7 eventsViewArea">
+            <h5 class="one-event">Tomorrow Games</h5>
+            <table class="striped centered">
+                <thead>
+                    <tr class="white-text">
+                        <th>Event</th>
+                        <th>League</th>
+                        <th>Sport</th>
+                    </tr>
+                </thead>
+                <tbody id="eventsView" class="center"></tbody>
+            </table>
+        </div>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
     <script src="./js/dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
